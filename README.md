@@ -70,6 +70,13 @@ az provider register --namespace Microsoft.ManagedIdentity
 az provider register --namespace Microsoft.KeyVault
 ```
 
+## Descargar el código fuente
+
+```bash
+git clone https://github.com/mleyvag/MOD6-LAB2.git
+
+cd MOD6-LAB2
+```
 ---
 
 ## Código fuente del laboratorio
@@ -375,8 +382,10 @@ az role assignment create \
 ## Fase 7. Cargar la API Key de AWS en Key Vault
 
 ```bash
-read -s -p "Ingrese el valor de la API Key de AWS API Gateway: " AWS_API_KEY
-echo
+# Ingresar el API Key correcto
+export AWS_API_KEY="8Adba0Bi3S17rLnM5xJUeLUO9TW4scS1uZuEV8L6"
+
+echo $AWS_API_KEY
 
 az keyvault secret set \
   --vault-name "$KEY_VAULT" \
@@ -519,8 +528,10 @@ El objetivo del ejercicio es actualizar el secreto en Azure Key Vault sin modifi
 ## Actividad 1. Actualizar el secreto en Key Vault
 
 ```bash
-read -s -p "Ingrese la nueva API Key del mismo API Gateway: " AWS_API_KEY_NUEVA
-echo
+# Agregar el nuevo API Key
+export AWS_API_KEY_NUEVA=""
+
+echo $AWS_API_KEY_NUEVA
 
 az keyvault secret set \
   --vault-name "$KEY_VAULT" \
