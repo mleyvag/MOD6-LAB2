@@ -1,0 +1,17 @@
+{
+  "name": "laboratorio-container-keyvault",
+  "version": "1.0.0",
+  "description": "API Node.js/Express que lee una API Key desde Azure Key Vault usando Managed Identity.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "dependencies": {
+    "@azure/identity": "^4.10.1",
+    "@azure/keyvault-secrets": "^4.9.0",
+    "express": "^4.19.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
