@@ -529,7 +529,7 @@ El objetivo del ejercicio es actualizar el secreto en Azure Key Vault sin modifi
 
 ```bash
 # Agregar el nuevo API Key
-export AWS_API_KEY_NUEVA=""
+export AWS_API_KEY_NUEVA="Ht2w5a2OG4ChhpfSC6VS98QA2EQLipd7bB2aJCPj"
 
 echo $AWS_API_KEY_NUEVA
 
