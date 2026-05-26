@@ -138,7 +138,7 @@ export IMAGE_TAG="1.0.0"
 export SECRET_NAME="aws-cotizador-api-key"
 
 #Reemplaza por el Endpoint correcto
-export AWS_COTIZADOR_ENDPOINT="https://<API-ID>.execute-api.<REGION-AWS>.amazonaws.com/dev/cotizaciones"
+export AWS_COTIZADOR_ENDPOINT="https://7z5zfmc7jl.execute-api.us-east-1.amazonaws.com/dev/cotizaciones"
 ```
 
 Validar:
